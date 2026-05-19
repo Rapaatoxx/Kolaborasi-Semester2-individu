@@ -112,10 +112,41 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.text-section h1,
+.name-highlight,
+.name-last {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.text-section h1 {
+    animation-delay: 0.2s;
+}
+
+.name-highlight {
+    animation-delay: 0.5s; 
+}
+
+.name-last {
+    animation-delay: 0.8s; 
+}
 
 .button-group {
     margin-top: 40px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 1.1s;
 }
 
 .btn {
@@ -142,7 +173,6 @@ body {
     transform: scale(1.05);
     filter: brightness(1.2);
 }
-
 
 .image-section {
     position: relative;
