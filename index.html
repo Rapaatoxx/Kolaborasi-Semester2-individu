@@ -67,16 +67,17 @@ body {
 }
 
 .hero-container {
-    padding: 20px 40px;
+    padding: 55px 45px;
     height: 80vh;
+    top: 3px;
 }
 
 .inner-border {
     border: 2px solid #5a008a;
-    height: 200%;
-    padding: 170px;
+    height: 170%;
+    padding: 30px;
     display: flex;
-    align-items: center;
+        justify-content: center;
 }
 
 .hero-content {
@@ -144,10 +145,14 @@ body {
 }
 
 .button-group {
-    margin-top: 40px;
+    margin-top: 50px;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
     animation-delay: 1.1s;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+
 }
 
 .btn {
@@ -282,29 +287,19 @@ body {
     object-fit: cover;
 }
 
-.photo-1 {
-    width: 400px;
-    height: 500px;
-    right: 150px;
-    top: 150px;
-    z-index: 4;
-    transform: rotate(-5deg);
-    animation: float 4s ease-in-out infinite;
-}
-
 .photo-2 {
     width: 300px;
-    height: 300px;
+    height: 200px;
     right: 0;
-    top: 30px;
+    top: -55px;
     z-index: 3;
-    transform: rotate(10deg);
-    animation: float 5s ease-in-out infinite reverse;
+    transform: rotate(-2deg);
+    animation: pulse-photo 5s infinite ease-in-out;
 }
 
 @keyframes float {
     0% { transform: translateY(0px) rotate(-5deg); }
-    50% { transform: translateY(-15px) rotate(-3deg); }
+    50% { transform: translateY(-5px) rotate(-2deg); }
     100% { transform: translateY(0px) rotate(-5deg); }
 }
 
@@ -672,6 +667,9 @@ body {
     animation: pulse-photo 5s infinite ease-in-out;
 }
 
+.project-text {
+    color :#000
+}
 
 .tilt-left { transform: rotate(-10deg); }
 .tilt-right { transform: rotate(10deg); }
@@ -901,24 +899,23 @@ body {
         </div>
     </header>
     <div id="home"></div>
-<br><br><br><br><br><br>
+<br><br><br><br>
     <main class="hero-container">
-        <div class="inner-border">
+        <div class=" row g-2 inner-border d-flex justify-content-center">
             <div class="hero-content">
-                <div class="text-section">
+                <div class="text-section d-flex flex-column">
                     <h1><i>HI</i> MY NAME IS</h1>
-                    <h4 class="name-highlight">RAFFA <span>NARAYAN</span></h4>
-                    <h6 class="name-last">RIZWAN</h6>
-
+                    <h2 class="name-highlight">RAFFA <span>NARAYAN</span></h2>
+                    <h4 class="name-last">RIZWAN</h4>
+<br>
                     <div class="button-group d-flex">
                         <a href="#experience" class="btn btn-outline">SEE MORE</a>
                         <input type="checkbox" id="modal-toggle" class="modal-checkbox">
-
 <label for="modal-toggle" class="open-btn btn btn-solid">CONTACT ME</label>
 
 <div class="modal-overlay">
     <div class="contact-card">
-        <label for="modal-toggle" class="close-icon">&times;</label>
+        <label  class="close-icon"><i class="bi bi-x"></i></label>
         
         <h1 class="title">CONTACT</h1>
 
@@ -948,7 +945,7 @@ body {
                 <div class="image-section">
                     <div class="container photo-wrapper">
                         <div class="photo photo-2">
-                            <img src="09.jpeg" >
+                            <img src="uyu.jpeg" >
                         </div>
                         
                     </div>
@@ -957,7 +954,7 @@ body {
         </div>
         <div id="am"></div>
     </main>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
     <section class="profile-section">
     <div class="profile-border">
          <div class="star star-left">
@@ -965,6 +962,7 @@ body {
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
             </svg>
         </div>
+        <br><br><br>
         <div class="about-content">
             <h2 align="center">ABOUT <span>ME</span></h2>
             <h5 align="center"><b>I am a Software Developer, I Specialize in Front end <br>
@@ -1076,6 +1074,7 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
                     <img src="rt.png" class="project-img tilt-left" alt="Sampah Jadi Rupiah">
                     <div class="card-content">
                         <h4 class="project-name">SAMPAH JADI RUPIAH</h4>
+                        <p class="project-text"><i>Aplikasi web untuk mengelola barang bekas menjadi sesuatu yang menghasilkan uang </i></p>
                         <a href="https://rapaatoxx.github.io/Sampah-Jadi-Rupiah/"><button class="btn-see-more btn-cyan">See More</button></a>
                     </div>
                 </div>
@@ -1085,7 +1084,8 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
                 <div class="project-card-custom">
                     <img src="tt.png" class="project-img tilt-right" alt="Manajemen Data Siswa">
                     <div class="card-content">
-                        <h4 class="project-name">Manajemen Data Siswa</h4>
+                        <h4 class="project-name">SMK Digital</h4>
+                        <p class="project-text"><i>Aplikasi web untuk manajemen data siswa/siswi sekolah melalui program SMK Digital</i></p>
                         <a href="https://rapaatoxx.github.io/Tugas-2-Bootstrap-2-/"><button class="btn-see-more btn-indigo">See More</button></a>
                     </div>
                 </div>
@@ -1096,6 +1096,7 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
                     <img src="ty.png" class="project-img tilt-left" alt="ENVIRONS">
                     <div class="card-content">
                         <h4 class="project-name">ENVIRONS</h4>
+                        <p class="project-text"><i>Aplikasi web untuk mengelola data lingkungan serta menolong seseorang yang kesulitan melalui donasi</i></p>
                         <a href="https://rapaatoxx.github.io/tugas-3-ecoo/"><button class="btn-see-more btn-green">See More</button></a>
                     </div>
                 </div>
@@ -1106,6 +1107,9 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
                     <img src="tu.png" class="project-img tilt-right" alt="COFFEE SHOP">
                     <div class="card-content">
                         <h4 class="project-name">COFFEE SHOP</h4>
+                        <p class="project-text"><i>Aplikasi web ecommerce untuk mengelola bisnis kopi dan makanan kecil
+<br><br>
+                        </i></p>
                         <a href="https://rapaatoxx.github.io/Tugas-4/"><button class="btn-see-more btn-brown">See More</button></a>
                     </div>
                 </div>
@@ -1116,6 +1120,7 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
                     <img src="ti.png" class="project-img tilt-left" alt="PET CARE">
                     <div class="card-content">
                         <h4 class="project-name">PET CARE</h4>
+                        <p class="project-text"><i>Aplikasi web untuk menjual kebutuhan seperti makanan, minuman dan layanan kesehatan bagi hewan</i></p>
                         <a href="https://rapaatoxx.github.io/tugas5-petcare/"><button class="btn-see-more btn-bright-cyan">See More</button></a>
                     </div>
                 </div>
