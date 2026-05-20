@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #ffffff55;
     color: #000000;
     overflow-x: hidden;
 }
@@ -73,8 +73,8 @@ body {
 
 .inner-border {
     border: 2px solid #5a008a;
-    height: 100%;
-    padding: 50px;
+    height: 200%;
+    padding: 170px;
     display: flex;
     align-items: center;
 }
@@ -113,7 +113,6 @@ body {
     letter-spacing: 2px;
 }
 
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -145,13 +144,10 @@ body {
 }
 
 .button-group {
+    margin-top: 40px;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
     animation-delay: 1.1s;
-}
-
-.button-group {
-    margin-top: 40px;
 }
 
 .btn {
@@ -195,7 +191,7 @@ body {
     left: 0;
     width: 150%;
     height: 5%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
@@ -288,7 +284,7 @@ body {
 
 .photo-1 {
     width: 400px;
-    height: 240px;
+    height: 500px;
     right: 150px;
     top: 150px;
     z-index: 4;
@@ -298,7 +294,7 @@ body {
 
 .photo-2 {
     width: 300px;
-    height: 200px;
+    height: 300px;
     right: 0;
     top: 30px;
     z-index: 3;
@@ -316,7 +312,7 @@ body {
     padding: 40px;
     border-bottom: none;
     margin-bottom: none;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .about-border {
@@ -516,7 +512,7 @@ body {
     margin-bottom: 25px;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #000000;
+    color: #fff;
     font-style: italic;
     letter-spacing: 1px;
 }
@@ -691,7 +687,7 @@ body {
     font-size: 1.2rem;
     margin-bottom: 15px;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
 }
 
 
@@ -700,7 +696,7 @@ body {
     border: none;
     border-radius: 25px;
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
@@ -767,7 +763,7 @@ body {
 .icon-html { background-color: #e34f26; color: black; }
 .icon-css { background-color: #1572b6; color: black; }
 .icon-bootstrap { background-color: #563d7c; color: black; }
-.icon-java { color: white; }
+.icon-java { color: rgb(0, 0, 0); }
 .icon-python { color: #3776ab; }
 
 
@@ -905,7 +901,7 @@ body {
         </div>
     </header>
     <div id="home"></div>
-<br><br><br><br>
+<br><br><br><br><br><br>
     <main class="hero-container">
         <div class="inner-border">
             <div class="hero-content">
@@ -917,7 +913,9 @@ body {
                     <div class="button-group">
                         <a href="#experience" class="btn btn-outline">SEE MORE</a>
                         <input type="checkbox" id="modal-toggle" class="modal-checkbox">
-                       <label for="modal-toggle" class="open-btn btn btn-solid">CONTACT ME</label>
+
+<label for="modal-toggle" class="open-btn btn btn-solid">CONTACT ME</label>
+
 <div class="modal-overlay">
     <div class="contact-card">
         <label for="modal-toggle" class="close-icon">&times;</label>
@@ -942,26 +940,24 @@ body {
 
             <button type="submit" class="send-button">Send</button>
         </form>
-    </div>
-</div>
-</div>
-</div>
+       </div>
+             </div>
+                    </div>
+                </div>
 
                 <div class="image-section">
                     <div class="container photo-wrapper">
                         <div class="photo photo-2">
-                            <img src="iik.jpeg" >
-                        </div>
-                        <div class="photo photo-1">
                             <img src="09.jpeg" >
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-    <div id="am"></div>
+        <div id="am"></div>
     </main>
-    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section class="profile-section">
     <div class="profile-border">
          <div class="star star-left">
@@ -1015,14 +1011,8 @@ body {
         </div>
 <br>
         <div class="star-decor star-1">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#bc00ff" stroke-width="1.5">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
         </div>
         <div class="star-decor star-2">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#bc00ff" stroke-width="1.5">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
             <div id="experience"></div>
         </div>
 <br><br>
@@ -1035,7 +1025,7 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
         <i class="bi bi-caret-down-fill"></i>
     </a></div>
 <br><br>
-<div class="row mt-5">
+<div class="row mt-9" style="justify-content: center;">
 
     <div class="col-md-3 mb-4">
         <h1 class="section-title">HOBBY</h1>
@@ -1067,11 +1057,7 @@ RPL is actually not my main major, because my main major is Mechanical Engineeri
             </div>
         </div>
     </div>
-     <div class="star-decor star-3">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#bc00ff" stroke-width="1.5">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-        </div>
+    
 </div>
 </div>
 </section>
